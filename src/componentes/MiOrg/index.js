@@ -8,11 +8,9 @@ const MiOrg = (props)=>{
 
     return <section className="orgSection">
        <div className="orgCaja">
-            <div className="tituloContainer">
-                <h3 className="title">Mi organización </h3>
-            </div>
-            <img src="/img/btn_plus.svg" alt="add" onClick={props.cambiarMostrar}/>
+            <h3 className="title">Mi organización </h3>
        </div>
+            <img className="btnMostrar" src="/img/btn_plus.svg" alt="add" onClick={props.cambiarMostrar}/>
         </section>
 }
 
