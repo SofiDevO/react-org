@@ -53,7 +53,7 @@ function App() {
 	return (
 		<div>
 			<Header />
-			{mostrarFormulario && <Formulario/>}
+			{mostrarFormulario && <Formulario equipos={equipos.map((patata)=> patata.titulo)}/>}
 			<MiOrg cambiarMostrar={cambiarMostrar}/>
 			{
 				equipos.map((equipo)=> <Equipo datos={equipo} key={equipo.titulo}/>)

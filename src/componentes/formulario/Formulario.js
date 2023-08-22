@@ -3,7 +3,7 @@ import "./Formulario.css";
 import CampoTexto from "../campoTexto";
 import ListaOpciones from "../ListaOpciones";
 import Boton from "../Boton";
-const Formulario = () => {
+const Formulario = (props) => {
     const [nombre, actualizarNombre] = useState("")
     const [puesto, actualizarPuesto] = useState("")
     const [foto, actualizarFoto] = useState("")
@@ -50,6 +50,7 @@ const Formulario = () => {
             <ListaOpciones 
                 valor={equipo}
                 actualizarEquipo={actualizarEquipo}
+                equipos={props.equipos}
             />
             <Boton>
                 Crear
