@@ -8,6 +8,8 @@ const Formulario = (props) => {
     const [puesto, actualizarPuesto] = useState("")
     const [foto, actualizarFoto] = useState("")
     const [equipo, actualizarEquipo] = useState("")
+    const {registrarColaborador} =props
+    
 
 
     const botonEvent = (e)=>{
@@ -19,7 +21,7 @@ const Formulario = (props) => {
             foto,
             equipo
         }
-        console.log(datosAEnviar);
+        registrarColaborador(datosAEnviar);
     }
 
 
