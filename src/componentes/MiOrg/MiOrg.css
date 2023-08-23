@@ -30,3 +30,36 @@
     cursor: pointer;
 }
 
+@media screen and (max-width:768px){
+    .orgCaja{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .title{
+        color: #6278F7;
+        text-align: center;
+        font-family: 'Prata', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 72px;
+        padding-bottom: 24px;
+        border-bottom: 6px solid #6278F7;
+        display: inline-block;
+    }
+    
+    
+    
+    
+    .btnMostrar{
+        position: absolute;
+        left: 69%;
+        top: 22%;
+        cursor: pointer;
+        width: 88px;
+    }
+
+}
+

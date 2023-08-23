@@ -18,3 +18,14 @@
     font-weight: 400;
     line-height: normal;
 }
+
+@media screen and (max-width:768px){
+    .formulario h2{
+        font-size: 22px;
+    }
+
+    .formulario form {
+        max-width: 85%;
+        padding: 8px 8px;
+    }
+}
