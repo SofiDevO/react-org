@@ -6,7 +6,7 @@ const Equipo = (props) => {
 	const { titulo, colorPrimario, colorSecundario } = props.datos;
 	const estiloFondo = { backgroundColor: colorSecundario };
 	const estiloTitulo = { borderColor: colorPrimario };
-	const { colaboradores } = props;
+	const { colaboradores, eliminarColaborador } = props;
 
 	console.log(colaboradores.length > 0);
 
@@ -21,6 +21,7 @@ const Equipo = (props) => {
 								datos={colaborador}
 								key={index}
 								colorPrimario={colorPrimario}
+								eliminarColaborador={eliminarColaborador}
 							/>
 						))}
 					</div>

@@ -20,6 +20,30 @@ function App() {
 		foto:"https://github.com/harlandlohora.png",
 		nombre:"Harland Lohora",
 		puesto: "Instructor"
+	},
+	{
+		equipo:"Data Science",
+		foto:"https://github.com/harlandlohora.png",
+		nombre:"Harland Lohora",
+		puesto: "Instructor"
+	},
+	{
+		equipo:"Móvil",
+		foto:"https://github.com/harlandlohora.png",
+		nombre:"Harland Lohora",
+		puesto: "Instructor"
+	},
+	{
+		equipo:"Devops",
+		foto:"https://github.com/harlandlohora.png",
+		nombre:"Harland Lohora",
+		puesto: "Instructor"
+	},
+	{
+		equipo:"Ux y Diseño",
+		foto:"https://github.com/harlandlohora.png",
+		nombre:"Harland Lohora",
+		puesto: "Instructor"
 	}
 ]) 
 
@@ -34,6 +58,11 @@ function App() {
 		actualizarColaboradores([...colaboradores, colaborador])
 	}
 
+	/* Eliminar colaborador */
+
+	const eliminarColaborador = ()=>{
+		console.log("Eliminar colaborador")	
+	}
 
 	/* Lista de equipos */
 	const equipos = [
@@ -89,6 +118,7 @@ function App() {
 					datos={equipo} 
 					key={equipo.titulo}
 					colaboradores={colaboradores.filter(colaborador => colaborador.equipo === equipo.titulo)}
+					eliminarColaborador ={eliminarColaborador}
 					/>
 				)
 			}

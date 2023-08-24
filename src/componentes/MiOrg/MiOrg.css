@@ -1,5 +1,6 @@
 .orgSection{
     position: relative;
+    padding: 0 25px;
 }
 .orgCaja{
     width: 100%;
@@ -25,12 +26,13 @@
 
 .btnMostrar{
     position: absolute;
-    left: 79%;
+    left: 72%;
     top: 20%;
     cursor: pointer;
 }
 
 @media screen and (max-width:768px){
+  
     .orgCaja{
         width: 100%;
         display: flex;

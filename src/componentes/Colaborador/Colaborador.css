@@ -1,9 +1,4 @@
 .colaborador{
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 15.5px );
-    -webkit-backdrop-filter: blur( 15.5px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
     width: 280px;
     margin-bottom: 24px;
     position: relative;
@@ -19,6 +14,7 @@
 .colaborador .encabezado{
     border-radius: 10px 10px 0px 0px;
     
+    
 }
 
 .colaborador img{
@@ -27,14 +23,18 @@
     border-radius: 50%;
     position: relative;
     bottom: -50px;
+    z-index: 5;
 }
 
 .colaborador .info {
-    background: #FFFFFF;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 15.5px );
+    -webkit-backdrop-filter: blur( 15.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 0px 0px 10px 10px;
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding-top: 57px;
+    padding-bottom: 84px;
     min-height: 100px;
     font-family: 'Montserrat', sans-serif;
 }
