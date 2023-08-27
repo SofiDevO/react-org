@@ -1,11 +1,11 @@
 import "./Colaborador.css"
-import { TiDeleteOutline } from "react-icons/ti";
+import { TiDelete } from "react-icons/ti";
 
 const Colaborador = (props)=>{
     const{nombre, puesto, foto, equipo} =props.datos
     const{colorPrimario,eliminarColaborador} =props
     return <div className="colaborador">
-        <span onClick={eliminarColaborador}><TiDeleteOutline/></span>
+        <TiDelete className="eliminar" onClick={eliminarColaborador}/>
         <div className="encabezado" style={{backgroundColor:colorPrimario}}>
             <img src={foto} alt={nombre}/>
         </div>
@@ -15,7 +15,5 @@ const Colaborador = (props)=>{
         </div>
     </div>
 }
-
-
 
 export default Colaborador

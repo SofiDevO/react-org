@@ -32,11 +32,19 @@
 }
 
 @media screen and (max-width:768px){
+    .orgSection {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+    }
   
     .orgCaja{
         width: 100%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
+        align-items: center;
     }
     
     .title{
@@ -47,18 +55,16 @@
         font-style: normal;
         font-weight: 400;
         line-height: 72px;
-        padding-bottom: 24px;
         border-bottom: 6px solid #6278F7;
         display: inline-block;
+        padding: 0;
     }
     
     
     
     
     .btnMostrar{
-        position: absolute;
-        left: 69%;
-        top: 22%;
+        position: unset;
         cursor: pointer;
         width: 88px;
     }

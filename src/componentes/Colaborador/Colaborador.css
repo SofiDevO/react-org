@@ -5,10 +5,6 @@
     border-radius: 10px;
 }
 
-.colaborador:hover{
-    transform: scale(1.1);
-    transition: .2s ease-in-out;
-}
 
 
 .colaborador .encabezado{
@@ -60,4 +56,11 @@
     position: absolute;
     right: -15px;
     top: -15px;
+}
+
+
+.eliminar:hover{
+    color: red;
+    transform: scale(1.2);
+    transition: .3s ease-in-out;
 }
