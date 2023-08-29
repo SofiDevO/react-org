@@ -1,5 +1,6 @@
 .equipo{
     width: 100%;
+    position: relative;
     padding: 32px;
     box-sizing: border-box;
     text-align: center;
@@ -23,4 +24,10 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+.input-color{
+    position: absolute;
+    top:20px;
+    right: 50px;
 }
