@@ -13,6 +13,7 @@
     "react-scripts": "^5.0.1",
     "stable": "^0.1.8",
     "strip-ansi": "^7.1.0",
+    "uuid": "^9.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
