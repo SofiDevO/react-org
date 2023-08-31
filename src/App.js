@@ -140,6 +140,7 @@ const [equipos, actualizarEquipos] = useState( [
 		actualizarEquipos(equiposActualizados)
 	}
 
+
 	/* Crear equipo */
 	const crearEquipo = (nuevoEquipo)=>{
 		console.log(nuevoEquipo)
