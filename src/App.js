@@ -15,42 +15,48 @@ function App() {
 		equipo:"Front End",
 		foto:"https://github.com/SofiDevO.png",
 		nombre:"Angela Sofía Osorio",
-		puesto: "Beta One"
+		puesto: "Beta One",
+		fav:true
 	},
 	{
 		id: uuidv4(),
 		equipo:"Programación",
 		foto:"https://github.com/harlandlohora.png",
 		nombre:"Harland Lohora",
-		puesto: "Instructor"
+		puesto: "Instructor",
+		fav:true
 	},
 	{
 		id: uuidv4(),
 		equipo:"Data Science",
 		foto:"https://github.com/harlandlohora.png",
 		nombre:"Harland Lohora",
-		puesto: "Instructor"
+		puesto: "Instructor",
+		fav:false
 	},
 	{
 		id: uuidv4(),
 		equipo:"Móvil",
 		foto:"https://github.com/harlandlohora.png",
 		nombre:"Harland Lohora",
-		puesto: "Instructor"
+		puesto: "Instructor",
+		fav:true
 	},
 	{
 		id: uuidv4(),
 		equipo:"Devops",
 		foto:"https://github.com/harlandlohora.png",
 		nombre:"Harland Lohora",
-		puesto: "Instructor"
+		puesto: "Instructor",
+		fav:false
 	},
 	{
 		id: uuidv4(),
 		equipo:"Ux y Diseño",
 		foto:"https://github.com/harlandlohora.png",
 		nombre:"Harland Lohora",
-		puesto: "Instructor"
+		puesto: "Instructor",
+		fav:true
 	}
 ]) 
 
@@ -139,6 +145,17 @@ const [equipos, actualizarEquipos] = useState( [
 		console.log(nuevoEquipo)
 		actualizarEquipos([...equipos, {...nuevoEquipo,id: uuidv4()}])
 	}
+	/* Like */
+	const like = (id)=> {
+		console.log(" like", id)
+		const colaboradoresLikeados = colaboradores.map((colaborador) => {
+			if(colaborador.id === id){
+				colaborador.fav = !colaborador.fav
+			}
+			return colaborador
+		})
+		actualizarColaboradores(colaboradoresLikeados)
+	} 
 
 
 	return (
@@ -159,6 +176,7 @@ const [equipos, actualizarEquipos] = useState( [
 					colaboradores={colaboradores.filter(colaborador => colaborador.equipo === equipo.titulo)}
 					eliminarColaborador ={eliminarColaborador}
 					actualizarColor={actualizarColor}
+					like={like}
 					/>
 				)
 			}

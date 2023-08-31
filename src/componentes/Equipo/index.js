@@ -8,7 +8,7 @@ const Equipo = (props) => {
 	const { titulo, colorPrimario,  id } = props.datos;
 	const estiloFondo = { backgroundColor: hexToRgba(colorPrimario, 0.6)};
 	const estiloTitulo = { borderColor: colorPrimario };
-	const { colaboradores, eliminarColaborador, actualizarColor } = props;
+	const { colaboradores, eliminarColaborador, actualizarColor, like } = props;
 
 	
 
@@ -33,6 +33,7 @@ const Equipo = (props) => {
 										key={index}
 										colorPrimario={colorPrimario}
 										eliminarColaborador={eliminarColaborador}
+										like={like}
 									/>
 								))}
 							</div>
