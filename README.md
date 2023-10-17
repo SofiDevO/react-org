@@ -1,3 +1,6 @@
+![image](https://github.com/SofiDevO/react-org/assets/102200061/4983348b-bdc7-40ff-af28-0765d45a387a)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
